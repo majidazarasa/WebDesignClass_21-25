@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var fruits=["Banana", "Orange", "Apple", "Mango"];
+        // document.getElementById("demo").innerText=fruits.length;
+        var text, i;
+        text="<ul>";
+        for(i=0 ; i < fruits.length ; i++){
+            debugger
+            text+="<li>"+fruits[i]+"</li>";
+        }
+        text+="</ul>";
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

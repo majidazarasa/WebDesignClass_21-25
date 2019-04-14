@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="carName">Car Name:</label>
+    <input type="text" id="carName">
+    <p id="demo">Ford</p>
+    <button onclick="setCarName();">try it!</button>
+    <script>
+        // User Define Function
+        
+        function getCarName(){
+            return document.getElementById("carName").value;
+        }
+        function setCarName(){
+            // var carName=getCarName();
+            // var para = document.getElementById("demo");
+            // para.innerText = carName;
+            document.getElementById("demo").innerText = getCarName();
+        }
+    </script>
+</body>
+
+</html>
