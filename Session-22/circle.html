@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Circle Radius : <input type="text" id="circleRadius" value="0"> cm<br><br>
+    <button onclick="calcCircle(getCircleRadius())">Circle Environment & Area</button>
+    <p id="demo"></p>
+    <script>
+        let objParagraph = document.getElementById("demo");
+        let objCircleRadius = document.getElementById("circleRadius");
+        function getCircleRadius() {
+            return objCircleRadius.value;
+        }
+        function calcCircle(circleRadius) {
+            objParagraph.innerText = "Circle Environment = " + 2 * Math.PI * circleRadius + " cm\n" +
+                                     "Circle Area = " + Math.PI * circleRadius ** 2 +" cm2";
+        }
+    </script>
+</body>
+
+</html>
