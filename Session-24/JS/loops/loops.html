@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        debugger
+        let result='';
+        let para=document.getElementById("demo");
+        let index; 
+        for( index=0; index < 9 ; index++ )
+        {
+            result += index + "<br>";
+        }
+        para.innerHTML = result;
+    </script>
+</body>
+</html>
