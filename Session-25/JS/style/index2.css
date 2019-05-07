@@ -2,9 +2,9 @@ p#demo{
     background: #fffaaa;
 }
 div#loop{
-    height: 80px;
-    width: 300px;
-    font-size: 3em;
+    height: 200px;
+    width: 400px;
+    font-size: 2em;
     color: green;
     border: 2px solid green;
 }
